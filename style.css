@@ -1,0 +1,161 @@
+/* =============================================
+   DIGITAL CATACOMBS — Global Stylesheet
+   ============================================= */
+
+/* Import a gothic-feeling font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=IM+Fell+English:ital@0;1&display=swap');
+
+/* --- Reset & Base --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+/* --- Typography --- */
+h1, h2, h3 {
+  font-family: 'UnifrakturMaguntia', cursive;
+  letter-spacing: 0.05em;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+a {
+  color: #aaaaaa;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* --- Layout --- */
+.page-wrapper {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.page-header {
+  text-align: center;
+  padding: 3rem 0 2rem;
+  border-bottom: 1px solid #333;
+  margin-bottom: 2.5rem;
+}
+
+.page-header .subtitle {
+  font-style: italic;
+  color: #888;
+  margin-top: 0.5rem;
+}
+
+/* --- Navigation --- */
+nav.site-nav {
+  background-color: #0a0a0a;
+  border-bottom: 1px solid #222;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav.site-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.75rem 1rem;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+nav.site-nav ul li a {
+  display: block;
+  padding: 0.4rem 0.9rem;
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #999;
+  border: 1px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+nav.site-nav ul li a:hover,
+nav.site-nav ul li a.active {
+  color: #fff;
+  border-color: #555;
+}
+
+/* --- Buttons --- */
+button, .btn {
+  background: transparent;
+  border: 1px solid #666;
+  color: #fff;
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 1rem;
+  padding: 0.6rem 1.4rem;
+  cursor: pointer;
+  letter-spacing: 0.08em;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+button:hover, .btn:hover {
+  background: #1a1a1a;
+  border-color: #aaa;
+}
+
+/* --- Forms --- */
+textarea, input[type="text"] {
+  background: #0d0d0d;
+  border: 1px solid #444;
+  color: #fff;
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 1rem;
+  padding: 0.75rem;
+  width: 100%;
+  resize: vertical;
+  transition: border-color 0.2s;
+}
+
+textarea:focus, input[type="text"]:focus {
+  outline: none;
+  border-color: #888;
+}
+
+/* --- Dividers --- */
+hr {
+  border: none;
+  border-top: 1px solid #222;
+  margin: 2rem 0;
+}
+
+/* --- Footer --- */
+footer.site-footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid #1a1a1a;
+  color: #444;
+  font-size: 0.85rem;
+  font-style: italic;
+}
